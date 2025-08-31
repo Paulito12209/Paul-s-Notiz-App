@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/Notiz App.png" type="img2/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/typo.css" />
+    <title>Notiz App</title>
+  </head>
+  <body onload="renderNotes()">
+    <main>
+      <header class="paddings">
+        <nav>
+          <img class="logo" src="./assets/img/Notiz App Neu.png" alt="Logo" />
+          <div class="headline">
+            <div class="title-box">
+              <h1>Paul's Notiz App</h1>
+              <h4>Organisiere deine Gedanken</h4>
+            </div>
+
+            <div class="input_box">
+              <input
+                id="note_input"
+                class="note_box"
+                placeholder="Notiz eintragen..."
+                type="text"
+              />
+              <button onclick="addNote()" class="add_button">
+                + Notiz hinzufügen
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="line"></div>
+      </header>
+      <section class="paddings">
+        <div class="note_content">
+          <div class="notes_titel">
+            <h3>Alle Notizen</h3>
+            <img
+              class="delete_icon"
+              src="./assets/img/write-file.png"
+              alt="Notizen Icon"
+            />
+          </div>
+          <div class="line"></div>
+          <div id="content"></div>
+        </div>
+      </section>
+      <section class="paddings">
+        <div class="trash_content">
+          <div class="trash_titel">
+            <h3>Papierkorb</h3>
+            <img
+              class="delete_icon"
+              src="./assets/img/delete-button.png"
+              alt="Delete Icon"
+            />
+          </div>
+          <div class="line"></div>
+          <div id="trash_content"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
