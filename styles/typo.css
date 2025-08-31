@@ -1,0 +1,44 @@
+/*=== FONTS ===*/
+
+/*= Raleway =*/
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf");
+  font-weight: 300;
+}
+
+/*=== FONT-HEIGHTS ===*/
+
+h1 {
+  font-family: "Raleway-Bold";
+  font-size: 40px;
+  color: black;
+}
+
+h3 {
+  font-family: "Raleway-Bold";
+  font-size: 24px;
+  color: #000000;
+}
+
+h4 {
+  font-family: "Raleway-Light";
+  font-size: 20px;
+}
+
+p {
+  font-family: "Raleway-Light";
+  font-size: 16px;
+}
