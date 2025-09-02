@@ -171,10 +171,10 @@ function getTrashNoteTemplate(indexNote) {
                 </div>
                 <div>
                     <button onclick="moveTrashToNotes(${indexNote})" class="option_button"> 
-                        <img class="option_icon" src="./assets/img/write-file.png" alt="Wiederherstellen" />
+                        <img class="option_icon" src="./assets/img/reset.png" alt="Wiederherstellen" />
                     </button> 
                     <button onclick="deleteNote(${indexNote})" class="option_button"> 
-                        <img class="option_icon" src="./assets/img/delete-button.png" alt="Permanent löschen" />
+                        <img class="option_icon" src="./assets/img/delete-from-storage.png" alt="Permanent löschen" />
                     </button>
                 </div>
             </div>`;
