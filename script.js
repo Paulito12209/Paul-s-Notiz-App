@@ -63,14 +63,6 @@ function addNote() {
     return;
   }
 
-  // // Falls nur Titel oder nur Notiz eingegeben wurde
-  // if (title == "") {
-  //     title = "Ohne Titel";
-  // }
-  // if (note == "") {
-  //     note = "Keine Beschreibung";
-  // }
-
   // Falls nur Titel oder Notiz eingegeben wurde
   else if (title == "" || note == "") {
     alert("Bitte das leere Feld noch ergänzen!");
@@ -90,6 +82,15 @@ function addNote() {
     saveToLocalStorage();
     renderNotes();
   }
+  // // === ALTERNATIVE OHNE ALERTS ===
+  // // Falls nur Titel oder nur Notiz eingegeben wurde
+  // if (title == "") {
+  //     title = "Ohne Titel";
+  // }
+  // if (note == "") {
+  //     note = "Keine Beschreibung";
+  // }
+
   // // Zur Array hinzufügen
   // notesTitles.push(title);
   // notes.push(note);
