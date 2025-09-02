@@ -71,7 +71,7 @@ function addNote() {
   //     note = "Keine Beschreibung";
   // }
 
-  // Falls nur Titel oder nur Notiz eingegeben wurde
+  // Falls nur Titel oder Notiz eingegeben wurde
   else if (title == "" || note == "") {
     alert("Bitte das leere Feld noch ergänzen!");
     return;
@@ -149,10 +149,10 @@ function getNoteTemplate(indexNote) {
                 </div>
                 <div>
                     <button onclick="moveToArchive(${indexNote})" class="option_button"> 
-                        <img class="option_icon" src="./assets/img/archive.png" alt="Archiv Button" />
+                        <img class="option_icon" src="./assets/img/archive.png" alt="Archiv Button" title="Archivieren" />
                     </button> 
                     <button onclick="moveToTrash(${indexNote})" class="option_button"> 
-                        <img class="option_icon" src="./assets/img/delete-button.png" alt="Delete Button" />
+                        <img class="option_icon" src="./assets/img/delete-button.png" alt="Delete Button" title="In Papierkorb verschieben" />
                     </button>
                 </div>
             </div>`;
@@ -170,10 +170,10 @@ function getArchivedNoteTemplate(indexNote) {
                 </div>
                 <div>
                     <button onclick="moveArchiveToNotes(${indexNote})" class="option_button"> 
-                        <img class="option_icon" src="./assets/img/write-file.png" alt="Zurück zu Notizen" />
+                        <img class="option_icon" src="./assets/img/write-file.png" alt="Zurück zu Notizen" title="Zu Notizen verschieben" />
                     </button> 
                     <button onclick="moveArchiveToTrash(${indexNote})" class="option_button"> 
-                        <img class="option_icon" src="./assets/img/delete-button.png" alt="Delete Button" />
+                        <img class="option_icon" src="./assets/img/delete-button.png" alt="Delete Button" title="In Papierkorb verschieben" />
                     </button>
                 </div>
             </div>`;
@@ -191,10 +191,10 @@ function getTrashNoteTemplate(indexNote) {
                 </div>
                 <div>
                     <button onclick="moveTrashToNotes(${indexNote})" class="option_button"> 
-                        <img class="option_icon" src="./assets/img/reset.png" alt="Wiederherstellen" />
+                        <img class="option_icon" src="./assets/img/reset.png" alt="Wiederherstellen" title="Wiederherstellen" />
                     </button> 
                     <button onclick="deleteNote(${indexNote})" class="option_button"> 
-                        <img class="option_icon" src="./assets/img/delete-from-storage.png" alt="Permanent löschen" />
+                        <img class="option_icon" src="./assets/img/delete-from-storage.png" alt="Permanent löschen" title="Löschen" />
                     </button>
                 </div>
             </div>`;
