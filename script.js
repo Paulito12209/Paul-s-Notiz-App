@@ -285,17 +285,11 @@ function moveTrashToNotes(indexNote) {
 
 // PERMANENT LÖSCHEN aus Papierkorb
 function deleteNote(indexNote) {
-    // Sicherheitsabfrage
-    let title = trashNotesTitles[indexNote];
-    let confirmDelete = confirm(`Möchten Sie die Notiz "${title}" wirklich permanent löschen?`);
+    // Aus Papierkorb-Arrays entfernen
+    trashNotesTitles.splice(indexNote, 1);
+    trashNotes.splice(indexNote, 1);
     
-    if (confirmDelete) {
-        // Aus Papierkorb-Arrays entfernen
-        trashNotesTitles.splice(indexNote, 1);
-        trashNotes.splice(indexNote, 1);
-        
-        // Speichern und Papierkorb neu anzeigen
-        saveToLocalStorage();
-        renderTrashNotes();
-    }
+    // Speichern und Papierkorb neu anzeigen
+    saveToLocalStorage();
+    renderTrashNotes();
 }
