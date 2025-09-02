@@ -45,9 +45,18 @@ nav {
   gap: 120px;
 }
 
-.note_box {
+.note_title_box {
   height: 32px;
   width: 184px;
+  padding-left: 16px;
+  border: 2px solid rgb(80, 73, 7);
+  border-radius: 24px;
+  font-weight: bold;
+}
+
+.note_box {
+  height: 32px;
+  width: 334px;
   padding-left: 16px;
   border: 2px solid rgb(80, 73, 7);
   border-radius: 24px;
@@ -61,7 +70,7 @@ nav {
   border: 0;
   border-radius: 24px;
   color: rgb(255, 255, 255);
-  background-color: #EECB00;
+  background-color: #eecb00;
   font-weight: bold;
 }
 
@@ -76,28 +85,50 @@ nav {
   font-weight: bold;
 }
 
+.line_header {
+  height: 4px;
+  width: 100%;
+  background-color: #eecb00;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
 .line {
   height: 1px;
   width: 100%;
-  background-color: #EECB00;
+  background-color: #eecb00;
   margin-top: 10px;
 }
 
 .note_content {
   min-height: 200px;
-  border: 4px solid #EECB00;
+  border: 4px solid #eecb00;
   border-radius: 16px;
   padding: 8px;
 }
 
-.notes_titel {
+.archived_note_content {
+  min-height: 200px;
+  border: 4px solid #eecb00;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.notes_title {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 8px;
 }
 
-.trash_titel {
+.archived_notes_title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.trash_title {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -106,7 +137,7 @@ nav {
 
 .trash_content {
   min-height: 200px;
-  border: 4px solid #EECB00;
+  border: 4px solid #eecb00;
   border-radius: 16px;
   padding: 8px;
 }
@@ -117,7 +148,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid #EECB00;
+  border: 1px solid #eecb00;
   background-color: rgb(248, 246, 232);
   border-radius: 16px;
   margin: 4px 0px;
@@ -139,20 +170,32 @@ nav {
 
 .note_text {
   display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.note_text_checkbox {
+  display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.delete_button {
+.option_button {
   background-color: #fffbc0;
   height: 34px;
   width: auto;
   padding-top: 4px;
-  border: 2px solid #EECB00;
+  border: 2px solid #eecb00;
   border-radius: 8px;
 }
 
-.delete_icon {
+.section_icon {
+  background-color: #fffbc0;
+  height: 20px;
+  width: auto;
+}
+
+.option_icon {
   background-color: #fffbc0;
   height: 20px;
   width: auto;

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles/typo.css" />
     <title>Notiz App</title>
   </head>
-  <body onload="renderNotes()">
+  <body onload="init()">
     <main>
       <header class="paddings">
         <nav>
@@ -18,28 +18,33 @@
               <h1>Paul's Notiz App</h1>
               <h4>Organisiere deine Gedanken</h4>
             </div>
-
-            <div class="input_box">
-              <input
-                id="note_input"
-                class="note_box"
-                placeholder="Notiz eintragen..."
-                type="text"
-              />
-              <button onclick="addNote()" class="add_button">
-                + Notiz hinzufügen
-              </button>
-            </div>
           </div>
         </nav>
-        <div class="line"></div>
+        <div class="line_header"></div>
+        <div class="input_box">
+          <input
+            id="note_title_input"
+            class="note_title_box"
+            placeholder="Titel eintragen..."
+            type="text"
+          />
+          <input
+            id="note_input"
+            class="note_box"
+            placeholder="Notiz eintragen..."
+            type="text"
+          />
+          <button onclick="addNote()" class="add_button">
+            + Notiz hinzufügen
+          </button>
+        </div>
       </header>
       <section class="paddings">
         <div class="note_content">
-          <div class="notes_titel">
+          <div class="notes_title">
             <h3>Alle Notizen</h3>
             <img
-              class="delete_icon"
+              class="section_icon"
               src="./assets/img/write-file.png"
               alt="Notizen Icon"
             />
@@ -49,11 +54,25 @@
         </div>
       </section>
       <section class="paddings">
+        <div class="archived_note_content">
+          <div class="archived_notes_title">
+            <h3>Archiv</h3>
+            <img
+              class="section_icon"
+              src="./assets/img/archive.png"
+              alt="Archiv Icon"
+            />
+          </div>
+          <div class="line"></div>
+          <div id="archived_content"></div>
+        </div>
+      </section>
+      <section class="paddings">
         <div class="trash_content">
-          <div class="trash_titel">
+          <div class="trash_title">
             <h3>Papierkorb</h3>
             <img
-              class="delete_icon"
+              class="section_icon"
               src="./assets/img/delete-button.png"
               alt="Delete Icon"
             />
