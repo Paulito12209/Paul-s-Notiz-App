@@ -42,3 +42,19 @@ p {
   font-family: "Raleway-Light";
   font-size: 16px;
 }
+
+/* === Media Querys === */
+
+/* 1080px */
+@media (max-width: 1080px) {
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}

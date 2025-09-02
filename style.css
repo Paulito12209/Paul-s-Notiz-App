@@ -200,3 +200,39 @@ nav {
   height: 20px;
   width: auto;
 }
+
+/* === Media Querys === */
+
+/* 1080px */
+@media (max-width: 1080px) {
+  .paddings {
+    padding: 8px 80px;
+  }
+
+  .note_title_box {
+    width: 164px;
+    padding-left: 12px;
+  }
+
+  .note_box {
+    width: 224px;
+    padding-left: 12px;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .paddings {
+    padding: 8px 24px;
+  }
+
+  .note_title_box {
+    width: 104px;
+    padding-left: 10px;
+  }
+
+  .note_box {
+    width: 134px;
+    padding-left: 12px;
+  }
+}
