@@ -45,6 +45,10 @@ nav {
   gap: 120px;
 }
 
+.input_box {
+  display: flex;
+}
+
 .note_title_box {
   height: 32px;
   width: 184px;
@@ -226,13 +230,18 @@ nav {
     padding: 8px 24px;
   }
 
+  .input_box {
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .note_title_box {
-    width: 104px;
+    width: 92%;
     padding-left: 10px;
   }
 
   .note_box {
-    width: 134px;
+    width: 92%;
     padding-left: 12px;
   }
 }
