@@ -59,7 +59,6 @@ function addNote() {
     
     // Prüfen ob mindestens ein Feld ausgefüllt ist
     if (title == "" && note == "") {
-        alert("Bitte geben Sie einen Titel oder eine Notiz ein!");
         return;
     }
     
